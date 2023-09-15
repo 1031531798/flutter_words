@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'home.dart';
 import 'login.dart';
 
@@ -12,7 +11,6 @@ class WordRecordApp extends StatelessWidget {
       title: 'WordRecord',
       initialRoute: '/login',
       routes: {
-        '/login': (BuildContext context) => const LoginPage(),
         '/login': (BuildContext context) => const LoginPage(),
         '/': (BuildContext context) => const HomePage(),
       },

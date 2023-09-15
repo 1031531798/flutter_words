@@ -1,12 +1,10 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class NavBar extends StatefulWidget {
-
-  int selectIndex;
-  bool extended = false;
+  final int selectIndex;
+  final bool extended;
   final onChange;
-  NavBar({super.key, required this.extended, required this.selectIndex, required this.onChange});
+  const NavBar({super.key, required this.extended, required this.selectIndex, required this.onChange});
 
 
   @override
