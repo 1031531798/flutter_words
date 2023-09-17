@@ -10,7 +10,6 @@ class NavBar extends StatefulWidget {
   @override
   State<NavBar> createState() {
     return _NavBarState();
-
   }
 }
 class _NavBarState extends State<NavBar> {
@@ -53,6 +52,11 @@ class _NavBarState extends State<NavBar> {
           icon: Icon(Icons.favorite_border),
           selectedIcon: Icon(Icons.favorite),
           label: Text('Love'),
+        ),
+        NavigationRailDestination(
+          icon: Icon(Icons.food_bank_outlined),
+          selectedIcon: Icon(Icons.food_bank),
+          label: Text('Food'),
         ),
       ],
     );

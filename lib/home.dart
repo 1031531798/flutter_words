@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:words_record/view/food.dart';
 import 'nav_bar.dart';
 
 class HomePage extends StatelessWidget {
@@ -205,12 +206,25 @@ class _LikePage extends State<LikePage> {
       ],
     );
   }
+  Widget foodBody () {
+    return  const Center(
+      child: FoodPage(),
+    );
+  }
 
   Widget routerBody() {
+    Map pageMap = {
+      0: homeBody,
+      1: loveBody,
+      2: foodBody
+    };
+    // if (selectIndex == 2) {
+    //   Navigator.push(context, MaterialPageRoute(builder: (context) => const FoodPage()));
+    // }
     return Expanded(
       child: Container(
         color: Theme.of(context).colorScheme.primaryContainer,
-        child: selectIndex == 0 ? homeBody() : loveBody(),
+        child: pageMap[selectIndex](),
       ),
     );
   }

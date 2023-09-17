@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:words_record/home.dart';
 import 'package:words_record/register/email_register.dart';
 
 class LoginPage extends StatefulWidget {
@@ -13,12 +14,16 @@ class _LoginPageState extends State<LoginPage> {
   Widget logo() {
     return const Image(image: AssetImage('assets/images/login_bg.png'));
   }
-
+  void goHome () {
+    Navigator.push(context, MaterialPageRoute(builder: (context) => const HomePage()),);
+  }
   void goRegister() {
     Navigator.push(context, MaterialPageRoute(builder: (context) => const EmailRegisterPage()),);
   }
 
-  void loginHandle() {}
+  void loginHandle() {
+    goHome();
+  }
   void googleLogin() {}
   @override
   Widget build(BuildContext context) {
