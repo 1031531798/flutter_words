@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:words_record/components/image_card.dart';
 
-class FoodPage extends StatefulWidget {
-  const FoodPage({super.key});
+class ParallaxPage extends StatefulWidget {
+  const ParallaxPage({super.key});
   @override
   State<StatefulWidget> createState() {
     return _FoodPage();
   }
 }
 
-class _FoodPage extends State<FoodPage> {
+class _FoodPage extends State<ParallaxPage> {
   List<Widget> foodList = [
     ImageCard(
         url:

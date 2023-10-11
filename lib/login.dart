@@ -14,16 +14,19 @@ class _LoginPageState extends State<LoginPage> {
   Widget logo() {
     return const Image(image: AssetImage('assets/images/login_bg.png'));
   }
-  void goHome () {
-    Navigator.push(context, MaterialPageRoute(builder: (context) => const HomePage()),);
+
+  void goHome() {
+    Navigator.pushNamed(context, '/');
   }
+
   void goRegister() {
-    Navigator.push(context, MaterialPageRoute(builder: (context) => const EmailRegisterPage()),);
+    Navigator.pushNamed(context, '/register');
   }
 
   void loginHandle() {
     goHome();
   }
+
   void googleLogin() {}
   @override
   Widget build(BuildContext context) {

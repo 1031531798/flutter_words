@@ -38,7 +38,6 @@ class _NavBarState extends State<NavBar> {
       trailing: showTrailing
           ? IconButton(
         onPressed: () {
-          // Add your onPressed code here!
         },
         icon: const Icon(Icons.more_horiz_rounded),
       )
@@ -46,17 +45,12 @@ class _NavBarState extends State<NavBar> {
       destinations: const <NavigationRailDestination>[
         NavigationRailDestination(
           icon: Icon(Icons.home),
-          label: Text('Home'),
-        ),
-        NavigationRailDestination(
-          icon: Icon(Icons.favorite_border),
-          selectedIcon: Icon(Icons.favorite),
-          label: Text('Love'),
+          label: Text('Words'),
         ),
         NavigationRailDestination(
           icon: Icon(Icons.food_bank_outlined),
           selectedIcon: Icon(Icons.food_bank),
-          label: Text('Food'),
+          label: Text('Parallax'),
         ),
       ],
     );
